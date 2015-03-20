@@ -1,6 +1,7 @@
 "use strict";
 
 function handleOpenURL(url) {
+	console.log('LaunchMyApp handleOpenURL called.');
   setTimeout(function() {
   	if(Package['meteor']){
   		console.log('Meteor Package loaded.');
