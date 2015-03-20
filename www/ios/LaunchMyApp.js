@@ -1,5 +1,14 @@
 "use strict";
 
+function handleOpenURL(url) {
+  setTimeout(function() {
+  	if(Package['meteor']){
+  		console.log('Meteor Package loaded.');
+  	}
+    alert("received url: " + url);
+  }, 0);
+}
+
 /*
  Q: Why an empty file?
  A: iOS doesn't need plumbing to get the plugin to work, so..
